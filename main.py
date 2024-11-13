@@ -5,7 +5,6 @@ def main():
     print_welcome_message()
     print_pizza_menu()
     print_add_ons()
-
     customer_name, customer_phone, customer_address = get_customer_details()
     order_details = []
     total_bill = 0
@@ -59,6 +58,4 @@ def main():
         print(f"\nYour total bill is: ${total_bill}.\n")
         print("Thank you for ordering from Python Pizza! Your delicious pizza will be delivered shortly.")
 
-
-# Start the pizza ordering process
 main()
