@@ -32,6 +32,7 @@ def get_customer_details():
     print("\nPlease enter your details for the order:")
     name = input("Name: ")
 
+
     while True:
         phone = input("Phone Number: ")
         # Check if the phone number is exactly 11 digits and contains only numbers
@@ -41,8 +42,8 @@ def get_customer_details():
             print("\nInvalid input. Please enter a valid 11-digit phone number.")
 
     address = input("Delivery Address: ")
-
     return name, phone, address
+
 
 
 def generate_order_id():
