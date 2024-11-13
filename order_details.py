@@ -1,7 +1,5 @@
 import time
 import random
-from tkinter.font import names
-from unittest import skipIf
 
 from price_lists import s_pizza, m_pizza, l_pizza
 
@@ -29,15 +27,20 @@ def order_more_pizzas():
         print("\nInvalid input. Please type 'Yes' or 'No'.")
         return order_more_pizzas()
 
+
 def get_customer_details():
     print("\nPlease enter your details for the order:")
     name = input("Name: ")
-    phone = input("Phone Number: ")
-    if phone != int or len(phone) != 11:
-        print("\nInvalid input. Please enter a valid 11-digit phone number.")
-        return get_customer_details()
-    address = input("Delivery Address: ")
 
+    while True:
+        phone = input("Phone Number: ")
+        # Check if the phone number is exactly 11 digits and contains only numbers
+        if phone.isdigit() and len(phone) == 11:
+            break
+        else:
+            print("\nInvalid input. Please enter a valid 11-digit phone number.")
+
+    address = input("Delivery Address: ")
 
     return name, phone, address
 
