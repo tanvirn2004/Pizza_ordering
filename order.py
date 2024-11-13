@@ -23,6 +23,7 @@ def get_order():
         print("\nInvalid input. Please type 'Yes' or 'No'.")
         return get_order()
 
+
 def get_pizza_size():
     print("\nWhat size of pizza would you like?")
     print("For Small Pizza type: S")
