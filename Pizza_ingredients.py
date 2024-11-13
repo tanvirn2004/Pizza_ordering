@@ -1,5 +1,6 @@
 from price_lists import s_pep, l_m_pep, cheese_price
 
+
 def add_pepperoni(size, bill):
 
     add_pep = input("\nWould you like to add pepperoni to your pizza? Type Yes or No: ").lower()
@@ -12,6 +13,7 @@ def add_pepperoni(size, bill):
         print("\nInvalid input. Please type 'Yes' or 'No'.")
         return add_pepperoni(size, bill)
     return bill
+
 
 def add_cheese(bill):
     cheese = input("\nWould you like to add extra cheese? Type Yes or No: ").lower()
