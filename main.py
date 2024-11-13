@@ -33,7 +33,6 @@ def main():
 
             print(f"\nYour total bill for this pizza is: ${bill}.")
             time.sleep(1)
-
             order_details.append({
                 'size': pizza_size,
                 'pepperoni': pepperoni,
